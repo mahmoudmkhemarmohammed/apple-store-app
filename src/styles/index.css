@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  background-color: #f0f0f0;
+  font-family: "Roboto", serif;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+header .container ul li a.active {
+  color: #0396ff;
+  text-shadow: 0 0 1px #03c0ff;
+}
+header .container .bars.active {
+  display: block;
+}
+
+header .container .icons .active {
+  animation: pump 0.4s linear;
+}
+.profile ul li a.active {
+  background-color: #00aaff;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.modal-box {
+  animation: modal 0.4s linear;
+}
+@keyframes pump {
+  25% {
+    scale: 0.7;
+  }
+  50% {
+    scale: 1;
+  }
+  75% {
+    scale: 1.5;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes modal {
+  0% {
+    opacity: 0;
+    filter: blur(3px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: .7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.swiper-button-disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
