@@ -1,6 +1,7 @@
 import { clearCart } from "@store/cart/cartSlice";
 import { useAppSelector } from "@store/hooks";
 import { AppDispatch } from "@store/store";
+import { addToast } from "@store/toasts/toastsSlice";
 
 import {motion} from "motion/react"
 
@@ -12,6 +13,13 @@ type TCartTotal = {
 };
 const CartTotal = ({ fullTotal, dispatch , showModal , setShowModal }: TCartTotal) => {
   const { accessToken } = useAppSelector((state) => state.auth);
+
+  if(!accessToken && fullTotal ) {
+    dispatch(addToast({
+      type: "warning",
+      message: "Please login to proceed with your purchase"
+    }))
+  }
 
   return (
     <motion.div
