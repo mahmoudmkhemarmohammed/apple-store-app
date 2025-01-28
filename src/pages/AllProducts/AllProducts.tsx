@@ -54,7 +54,7 @@ const AllProducts = () => {
           <MdKeyboardArrowLeft
             onClick={() => handelPrevAndNextButton("prev")}
             className={`text-xl w-11 h-11 p-2 rounded shadow-lg bg-[#00aaff] text-white cursor-pointer ${
-              page === 1 && "cursor-not-allowed bg-[#ff006f48]"
+              page === 1 && "cursor-not-allowed bg-[#ff006f48] pointer-events-none"
             }`}
           />
           {arrayFromTotalPage.map((pageNumber) => {
@@ -73,7 +73,7 @@ const AllProducts = () => {
           <MdKeyboardArrowRight
             onClick={() => handelPrevAndNextButton("next")}
             className={`text-xl w-11 h-11 p-2 rounded shadow-lg bg-[#00aaff] text-white cursor-pointer ${
-              page === totalPage && "cursor-not-allowed bg-[#ff006f48]"
+              page === totalPage && "cursor-not-allowed bg-[#ff006f48] pointer-events-none"
             }`}
           />
         </div>

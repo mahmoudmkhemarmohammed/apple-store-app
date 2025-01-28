@@ -17,7 +17,6 @@ const HomeBanner = () => {
             disableOnInteraction: false,
           }}
           slidesPerView={1}
-          loop={true}
           grabCursor={true}
           pagination={{
             clickable: true,

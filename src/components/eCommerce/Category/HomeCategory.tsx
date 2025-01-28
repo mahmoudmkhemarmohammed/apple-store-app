@@ -21,7 +21,6 @@ const HomeCategory = () => {
             },
           }}
           spaceBetween={10}
-          loop={true}
           autoplay={{
             delay: 3000,
             reverseDirection: true,
