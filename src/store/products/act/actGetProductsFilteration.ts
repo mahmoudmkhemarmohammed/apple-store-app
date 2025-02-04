@@ -17,7 +17,7 @@ const actGetProductsFilteration = createAsyncThunk(
     const {page , prefix , sortWithoutRange , priceRange , search} = data
     
     const priceRangeFilter = priceRange.length > 0 ? `&price_gte=${priceRange[0]}&price_lte=${priceRange[1]}` : ""
-    const searchProducts = search !== "" ? `&title=${search}` : ""
+    const searchProducts = search !== "" ? `&q=${search}` : ""
     const concatenatedCatPerfix = prefix.map(el => `cat_prefix=${el}`).join("&")
     
     try {
