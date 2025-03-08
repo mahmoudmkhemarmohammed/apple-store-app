@@ -1,6 +1,7 @@
 # Apple Store Project
 
 ## 📌 Overview
+🔗 **Live Demo:** [Click here to view](https://ishop-store.netlify.app/)
 This is a fully functional **E-Commerce** web application built using modern front-end technologies. The project includes features such as product browsing, cart management, user authentication, and order processing and more.
 
 ## ✨ Features
