@@ -1,50 +1,70 @@
-# React + TypeScript + Vite
+# Apple Store Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
+This is a fully functional **E-Commerce** web application built using modern front-end technologies. The project includes features such as product browsing, cart management, user authentication, and order processing and more.
 
-Currently, two official plugins are available:
+## ✨ Features
+- 🔹 **User Authentication & Authorization** (Login, Register, Role-based Access)
+- 🔹 **Email Availability Check** during registration
+- 🔹 **Form Validations** using Zod & React Hook Form
+- 🔹 **Product Filtering** (Category, Price Range, Sorting by Price & Date)
+- 🔹 **Product Search** with real-time filtering
+- 🔹 **Add to Wishlist** to save favorite products
+- 🔹 **Add to Cart** for easy checkout
+- 🔹 **Product Details Page** with full specifications
+- 🔹 **User Profile Page** to manage account information
+- 🔹 **Order Management** (View Order History, Track Orders)
+- 🔹 **Edit Profile** (Update Name, Email, Password, and more)
+- 🔹 **Secure Checkout Process**
+- 🔹 **Toaster Notifications** using Pure React
+- 🔹 **Skeleton Loaders** for better UX
+- 🔹 **Responsive & Mobile-Friendly UI**
+- 🔹 **Protected Route In Wishlit Page And Profile Page**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Technologies Used
+- **Frontend:** React.js, TypeScript, Redux Toolkit, React Hook Form, Axios
+- **Styling:** Tailwind CSS, Framer Motion (for animations)
+- **State Management:** Redux Toolkit, Redux Persist
+- **Form Validation:** React Hook Form + Zod
+- **API Handling:** Axios
+- **UI Enhancements:** Swiper, React Content Loader, Lottie React
+- **Notifications:** Toaster using Pure React
+- **Loading Effects:** Skeleton Loaders
+- **Security:** Authentication & Authorization with Role-based Access
+- **Search Functionality:** Real-time product search
+- **Email Availability Check:** Ensuring unique email registration
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🏗️ Project Structure
+```bash
+📦 ecommerce-project
+ ┣ 📂 src
+ ┃ ┣ 📂 components
+ ┃ ┃ ┣ 📂 common      # Reusable common components
+ ┃ ┃ ┣ 📂 feedback    # Feedback-related components
+ ┃ ┃ ┣ 📂 ecommerce   # E-commerce specific components
+ ┃ ┣ 📂 pages        # Main application pages
+ ┃ ┣ 📂 routes       # Application routes
+ ┃ ┣ 📂 store        # State management (Redux)
+ ┃ ┣ 📂 layouts      # Application layouts
+ ┃ ┣ 📂 validations  # Form validation logic
+ ┃ ┣ 📂 services     # API calls and business logic
+ ┃ ┣ 📂 styles       # Global and component-specific styles
+ ┃ ┣ 📂 types        # TypeScript types and interfaces
+ ┃ ┣ 📂 utils        # Helper functions and utilities
+ ┃ ┣ 📂 hooks        # Custom React hooks
+ ┃ ┣ 📂 assets       # Images, icons, and other static files
+ ┃ ┗ 📜 main.tsx     # Entry point
+ ┣ 📜 package.json  # Dependencies & scripts
+ ┣ 📜 tailwind.config.js  # Tailwind setup
+ ┗ 📜 README.md     # Project documentation
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🎯 Future Improvements
+- ✅ Add payment gateway integration
+- ✅ Improve SEO & Performance
+- ✅ Multi-language support
+- ✅ Dark Mood
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 👨‍💻 Author
+- **Mahmoud Mkhemar**
+- GitHub: [mahmoudmkhemarmohammed](https://github.com/mahmoudmkhemarmohammed)
